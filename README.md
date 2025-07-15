@@ -69,6 +69,7 @@ Um navegador web leve y rápido, é um fork de CleanBrowser, esta na versão Bet
    ```
 ## 💻 **Instalação**
   ES-La version para Linux (deribados de Debian y Fedora) pueden descargar el archivo de instalacion en https://br-cybec.github.io/store.html
+  
   BR-A versão Linux (derivada do Debian e Fedora) pode baixar o arquivo de instalação em https://br-cybec.github.io/store.html
 
 ## 🔧 **Requisitos do Sistema**
@@ -97,6 +98,7 @@ Um navegador web leve y rápido, é um fork de CleanBrowser, esta na versão Bet
 
 ## **Agradecimentos**
   Es-Nuestro agradecimiento a Lucas (https://github.com/lucasvitancourt/CleanBrowser)por compartir el codigo y dar la opcion de poder hacer un Fork  
+  
   Br- Nossos agradecimentos ao Lucas (https://github.com/lucasvitancourt/CleanBrowser) por compartilhar o código e dar a opção de fazer um Fork
   
 ## 📸 **Screenshots**
