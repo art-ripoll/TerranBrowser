@@ -97,7 +97,7 @@ Um navegador web leve y rápido, é um fork de CleanBrowser, esta na versão Bet
 5. Abra um Pull Request para análise.
 
 ## **Agradecimentos**
-  Es-Nuestro agradecimiento a Lucas (https://github.com/lucasvitancourt/CleanBrowser)por compartir el codigo y dar la opcion de poder hacer un Fork  
+  Es-Nuestro agradecimiento a Lucas (https://github.com/lucasvitancourt/CleanBrowser) por compartir el codigo y dar la opcion de poder hacer un Fork  
   
   Br- Nossos agradecimentos ao Lucas (https://github.com/lucasvitancourt/CleanBrowser) por compartilhar o código e dar a opção de fazer um Fork
   
