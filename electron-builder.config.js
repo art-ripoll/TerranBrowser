@@ -1,6 +1,6 @@
 module.exports = {
-  appId: "com.cleanbrowser.app",
-  productName: "Clean Browser",
+  appId: "com.terranbrowser.app",
+  productName: "Terran Browser",
   win: {
     target: [
       {
@@ -20,10 +20,10 @@ module.exports = {
     deleteAppDataOnUninstall: true,
     createDesktopShortcut: true,
     createStartMenuShortcut: true,
-    shortcutName: "Clean Browser",
+    shortcutName: "Terran Browser",
     installerIcon: "./assets/icon.ico",
     uninstallerIcon: "./assets/icon.ico",
-    artifactName: "CleanBrowserSetup.exe"
+    artifactName: "TerranBrowserSetup.exe"
   },
   directories: {
     output: "dist",
