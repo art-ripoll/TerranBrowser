@@ -1,0 +1,274 @@
+/* --- AUTOCOMPLETADO BARRA DE BÚSQUEDA (SOLO UN BLOQUE, FORZADO Y LIMPIO) --- */
+.autocomplete-box, #fox-autocomplete-box {
+    position: absolute !important;
+    left: 0 !important;
+    top: 100% !important;
+    background: #fff !important;
+    border: 2px solid #1976d2 !important;
+    border-radius: 12px !important;
+    box-shadow: 0 8px 32px rgba(25, 118, 210, 0.18) !important;
+    margin-top: 4px !important;
+    z-index: 99999 !important;
+    min-width: 260px !important;
+    max-width: 420px !important;
+    max-height: 320px !important;
+    overflow-y: auto !important;
+    display: none !important;
+    padding: 0 !important;
+    transition: box-shadow 0.2s !important;
+}
+.autocomplete-box.show, #fox-autocomplete-box.show {
+    display: block !important;
+}
+.autocomplete-box *, #fox-autocomplete-box * {
+    font-family: Arial, Helvetica, sans-serif !important;
+    font-size: 22px !important;
+    color: #111 !important;
+    font-weight: 700 !important;
+    background: transparent !important;
+    box-shadow: none !important;
+}
+.autocomplete-item {
+    padding: 16px 28px !important;
+    cursor: pointer !important;
+    border-bottom: 1px solid #e3eaf5 !important;
+    background: #fff !important;
+    color: #111 !important;
+    font-size: 22px !important;
+    font-weight: 700 !important;
+    letter-spacing: 0.01em !important;
+    display: flex !important;
+    align-items: center !important;
+    gap: 8px !important;
+    transition: background 0.18s, color 0.18s, font-size 0.18s !important;
+}
+.autocomplete-item:last-child {
+    border-bottom: none !important;
+}
+.autocomplete-item:hover, .autocomplete-item.active, .autocomplete-item:focus {
+    background: #1976d2 !important;
+    color: #fff !important;
+    font-size: 23px !important;
+    font-weight: 800 !important;
+    letter-spacing: 0.02em !important;
+}
+.autocomplete-item b {
+    color: #1976d2 !important;
+    font-weight: 900 !important;
+    font-size: 1.12em !important;
+}
+.autocomplete-item span {
+    color: #607d8b !important;
+    font-size: 16px !important;
+    font-weight: 500 !important;
+    margin-left: 10px !important;
+}
+/* --- AUTOCOMPLETADO BARRA DE BÚSQUEDA --- */
+.autocomplete-box, #fox-autocomplete-box {
+    position: absolute !important;
+    left: 0 !important;
+    top: 100% !important;
+    background: #fff !important;
+    border: 2px solid #1976d2 !important;
+    border-radius: 12px !important;
+    box-shadow: 0 8px 32px rgba(25, 118, 210, 0.18) !important;
+    margin-top: 4px !important;
+    z-index: 99999 !important;
+    min-width: 260px !important;
+    max-width: 420px !important;
+    max-height: 320px !important;
+    overflow-y: auto !important;
+    font-size: 18px !important;
+    color: #1976d2 !important;
+    display: none;
+    padding: 0 !important;
+    transition: box-shadow 0.2s !important;
+}
+.autocomplete-box.show, #fox-autocomplete-box.show {
+    display: block !important;
+}
+.autocomplete-item {
+    padding: 14px 24px !important;
+    cursor: pointer !important;
+    transition: background 0.18s, color 0.18s, font-size 0.18s !important;
+    border-bottom: 1px solid #e3eaf5 !important;
+    background: #fff !important;
+    color: #1976d2 !important;
+    font-size: 18px !important;
+    font-weight: 500 !important;
+    letter-spacing: 0.01em !important;
+    display: flex !important;
+    align-items: center !important;
+    gap: 8px !important;
+}
+.autocomplete-item:last-child {
+    border-bottom: none !important;
+}
+.autocomplete-item:hover, .autocomplete-item.active, .autocomplete-item:focus {
+    background: linear-gradient(90deg, #1976d2 80%, #42a5f5 100%) !important;
+    color: #fff !important;
+    font-size: 19px !important;
+    font-weight: 600 !important;
+    letter-spacing: 0.02em !important;
+}
+.autocomplete-item b {
+    color: #0d47a1 !important;
+    font-weight: 700 !important;
+    font-size: 1.08em !important;
+}
+.autocomplete-item span {
+    color: #607d8b !important;
+    font-size: 13px !important;
+    font-weight: 400 !important;
+    margin-left: 6px !important;
+}
+/* Mantenha apenas os estilos do menu de ferramentas */
+.tools-dropdown {
+    position: relative;
+}
+
+.tools-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: var(--surface-color);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    box-shadow: 0 4px 12px var(--shadow-color);
+    padding: 4px;
+    min-width: 200px;
+    z-index: 1000;
+    margin-top: 4px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+/* Adicionar área de tolerância */
+.tools-menu::before {
+    content: '';
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    right: -20px;
+    height: 20px;
+}
+
+.tools-menu.active {
+    display: block;
+    animation: menuFadeIn 0.3s ease;
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Estilos para modo anônimo */
+.incognito-mode {
+    --primary-color: #9B6DFF;
+    --background-color: #1A1B2E;
+    --surface-color: #242640;
+    --border-color: #2F3152;
+}
+
+.incognito-indicator {
+    display: flex;
+    align-items: center;
+    padding: 0 12px;
+    color: var(--text-secondary);
+    font-size: 13px;
+    -webkit-app-region: drag;
+    height: 100%;
+}
+
+/* Estilo especial para o botão de modo anônimo */
+#incognito.tool-item {
+    color: #9B6DFF;
+}
+
+#incognito.tool-item:hover {
+    background: rgba(155, 109, 255, 0.1);
+}
+
+/* Ajustes visuais para janela anônima */
+.incognito-mode .titlebar {
+    background: rgba(26, 27, 46, 0.95);
+}
+
+.incognito-mode .tab {
+    background: var(--surface-color);
+}
+
+.incognito-mode .tab.active {
+    border-color: var(--primary-color);
+}
+
+/* Animação mais suave */
+@keyframes menuFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-5px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* --- AUTOCOMPLETADO FINAL CON FONDO SÓLIDO Y ANCHO COMPLETO --- */
+#urlBarWrapper {
+    position: relative;
+}
+
+.autocomplete-box {
+    position: absolute !important;
+    top: 100% !important;
+    left: 0 !important;
+    width: 100% !important;
+    background: #fff !important;
+    border: 1px solid #cfd8dc !important;
+    border-radius: 8px !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1) !important;
+    z-index: 9999 !important;
+    padding: 4px 0 !important;
+    overflow: hidden !important;
+}
+
+.autocomplete-item {
+    display: flex !important;
+    align-items: center !important;
+    gap: 12px !important;
+    width: 100% !important;
+    background: #fff !important;
+    padding: 10px 16px !important;
+    border-bottom: 1px solid #eee !important;
+    cursor: pointer !important;
+    transition: background 0.2s ease-in-out;
+}
+
+.autocomplete-item:hover {
+    background: #1976d2 !important;
+    color: #fff !important;
+}
+
+.autocomplete-favicon {
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+}
+
+.autocomplete-title {
+    font-size: 16px;
+    font-weight: 600;
+    color: #111;
+}
+
+.autocomplete-url {
+    font-size: 12px;
+    color: #607d8b;
+}
+
+.autocomplete-item:hover .autocomplete-title,
+.autocomplete-item:hover .autocomplete-url {
+    color: #fff !important;
+}
